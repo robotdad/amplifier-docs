@@ -1,0 +1,79 @@
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting_started/index.md
+      - Installation: getting_started/installation.md
+      - Quickstart: getting_started/quickstart.md
+      - Provider Setup: getting_started/providers.md
+  - User Guide:
+      - user_guide/index.md
+      - CLI Reference: user_guide/cli.md
+      - Profiles: user_guide/profiles.md
+      - Agents: user_guide/agents.md
+      - Sessions: user_guide/sessions.md
+      - Collections: user_guide/collections.md
+  - Developer Guide:
+      - developer/index.md
+      - Module Development: developer/module_development.md
+      - Local Development: developer/local_development.md
+      - Contracts:
+          - developer/contracts/index.md
+          - Provider Contract: developer/contracts/provider.md
+          - Tool Contract: developer/contracts/tool.md
+          - Hook Contract: developer/contracts/hook.md
+          - Orchestrator Contract: developer/contracts/orchestrator.md
+          - Context Contract: developer/contracts/context.md
+  - Architecture:
+      - architecture/index.md
+      - Overview: architecture/overview.md
+      - Kernel Philosophy: architecture/kernel.md
+      - Module System: architecture/modules.md
+      - Mount Plans: architecture/mount_plans.md
+      - Event System: architecture/events.md
+  - Ecosystem:
+      - ecosystem/index.md
+      - Modules:
+          - modules/index.md
+          - Providers:
+              - modules/providers/index.md
+              - Anthropic: modules/providers/anthropic.md
+              - OpenAI: modules/providers/openai.md
+              - Azure OpenAI: modules/providers/azure.md
+              - Ollama: modules/providers/ollama.md
+          - Tools:
+              - modules/tools/index.md
+              - Filesystem: modules/tools/filesystem.md
+              - Bash: modules/tools/bash.md
+              - Web: modules/tools/web.md
+              - Search: modules/tools/search.md
+              - Task: modules/tools/task.md
+          - Orchestrators:
+              - modules/orchestrators/index.md
+          - Contexts:
+              - modules/contexts/index.md
+          - Hooks:
+              - modules/hooks/index.md
+      - Libraries:
+          - libraries/index.md
+          - Profiles: libraries/profiles.md
+          - Collections: libraries/collections.md
+          - Config: libraries/config.md
+          - Module Resolution: libraries/module_resolution.md
+  - API Reference:
+      - api/index.md
+      - Core:
+          - api/core/index.md
+          - Session: api/core/session.md
+          - Coordinator: api/core/coordinator.md
+          - Hooks: api/core/hooks.md
+          - Models: api/core/models.md
+          - Events: api/core/events.md
+      - CLI:
+          - api/cli/index.md
+  - Showcase:
+      - showcase/index.md
+  - Community:
+      - community/index.md
+      - Contributing: community/contributing.md
+      - Roadmap: community/roadmap.md
+      - Support: community/support.md

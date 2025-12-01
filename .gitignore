@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+
+# Build output
+site/
+
+# UV lock file (optional - can be committed for reproducibility)
+# uv.lock
+
+# Python cache
+__pycache__/
+*.py[cod]
