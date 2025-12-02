@@ -74,7 +74,7 @@ A modular AI agent framework with Linux kernel-inspired architecture
     ```
 
 [Get Started →](getting_started/installation.md){ .md-button .md-button--primary }
-[View on GitHub →](https://github.com/microsoft/amplifier){ .md-button }
+[View on GitHub →](https://github.com/microsoft/amplifier/tree/next){ .md-button }
 
 ## Architecture Overview
 
@@ -148,7 +148,7 @@ Amplifier provides a rich ecosystem of swappable modules and libraries.
 
 ## Community
 
-- [GitHub Repository](https://github.com/microsoft/amplifier)
+- [GitHub Repository](https://github.com/microsoft/amplifier/tree/next)
 - [Issue Tracker](https://github.com/microsoft/amplifier/issues)
 - [Contributing Guide](community/contributing.md)
 

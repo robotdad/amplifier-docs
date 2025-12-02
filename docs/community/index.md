@@ -30,7 +30,7 @@ Welcome to the Amplifier community! This section covers how to contribute, get s
 
 ## Links
 
-- **GitHub**: [github.com/microsoft/amplifier](https://github.com/microsoft/amplifier)
+- **GitHub**: [github.com/microsoft/amplifier](https://github.com/microsoft/amplifier/tree/next)
 - **Issues**: [github.com/microsoft/amplifier/issues](https://github.com/microsoft/amplifier/issues)
 - **Discussions**: [github.com/microsoft/amplifier/discussions](https://github.com/microsoft/amplifier/discussions)
 
