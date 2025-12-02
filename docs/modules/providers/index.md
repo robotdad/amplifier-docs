@@ -15,6 +15,7 @@ Providers integrate LLM backends into Amplifier. They translate between Amplifie
 | **[OpenAI](openai.md)** | GPT models | [GitHub](https://github.com/microsoft/amplifier-module-provider-openai) |
 | **[Azure OpenAI](azure.md)** | Azure-hosted GPT | [GitHub](https://github.com/microsoft/amplifier-module-provider-azure-openai) |
 | **[Ollama](ollama.md)** | Local models | [GitHub](https://github.com/microsoft/amplifier-module-provider-ollama) |
+| **[vLLM](vllm.md)** | Self-hosted LLMs via Responses API | [GitHub](https://github.com/microsoft/amplifier-module-provider-vllm) |
 | **Mock** | Testing provider | [GitHub](https://github.com/microsoft/amplifier-module-provider-mock) |
 
 <!-- MODULE_LIST_PROVIDER -->
@@ -46,4 +47,4 @@ amplifier run --provider ollama "Hello"
 
 ## Contract
 
-See [Provider Contract](../developer/contracts/provider.md) for implementation details.
+See [Provider Contract](../../developer/contracts/provider.md) for implementation details.

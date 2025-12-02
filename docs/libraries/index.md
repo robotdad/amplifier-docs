@@ -57,22 +57,22 @@ Libraries are **not part of the kernel**. They implement application-layer polic
 <div class="grid">
 
 <div class="card">
-<h3><a href="profiles.md">Profiles Library</a></h3>
+<h3><a href="profiles/">Profiles Library</a></h3>
 <p>Load and compile profiles to Mount Plans. Handles inheritance, overlays, and @mentions.</p>
 </div>
 
 <div class="card">
-<h3><a href="collections.md">Collections Library</a></h3>
+<h3><a href="collections/">Collections Library</a></h3>
 <p>Discover and manage collections. Convention-based resource discovery.</p>
 </div>
 
 <div class="card">
-<h3><a href="config.md">Config Library</a></h3>
+<h3><a href="config/">Config Library</a></h3>
 <p>Three-scope configuration management. Deep merge semantics.</p>
 </div>
 
 <div class="card">
-<h3><a href="module_resolution.md">Module Resolution</a></h3>
+<h3><a href="module_resolution/">Module Resolution</a></h3>
 <p>Resolve module IDs to sources. Git, file, and package strategies.</p>
 </div>
 

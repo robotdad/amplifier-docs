@@ -28,11 +28,6 @@ class Tool(Protocol):
         """Human-readable description for LLM."""
         ...
 
-    @property
-    def input_schema(self) -> dict:
-        """JSON Schema for tool parameters."""
-        ...
-
     async def execute(
         self,
         input: dict[str, Any]
@@ -40,6 +35,9 @@ class Tool(Protocol):
         """Execute the tool."""
         ...
 ```
+
+!!! note "Input Schema"
+    The `input_schema` property is not part of the formal Protocol but is commonly implemented by tools as a class attribute. Orchestrators use it to generate tool definitions for LLMs.
 
 ## Mount Function
 

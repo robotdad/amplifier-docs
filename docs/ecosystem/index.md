@@ -71,11 +71,11 @@ Libraries are used by applications (like the CLI) to provide higher-level functi
 
 | Category | Count | Examples |
 |----------|-------|----------|
-| Providers | 5 | Anthropic, OpenAI, Azure, Ollama, Mock |
+| Providers | 6 | Anthropic, OpenAI, Azure, Ollama, vLLM, Mock |
 | Tools | 6 | Filesystem, Bash, Web, Search, Task, Todo |
 | Orchestrators | 3 | Basic, Streaming, Events |
 | Contexts | 2 | Simple, Persistent |
-| Hooks | 9 | Logging, Approval, Redaction, Backup, Streaming UI, etc. |
+| Hooks | 9 | Logging, Approval, Redaction, Backup, Streaming UI, Schedulers, etc. |
 | Libraries | 4 | Profiles, Collections, Config, Module Resolution |
 | Collections | 4 | Toolkit, Design Intelligence, Recipes, Issues |
 

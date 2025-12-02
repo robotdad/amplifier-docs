@@ -20,10 +20,12 @@ Thank you for your interest in contributing to Amplifier! This guide covers how 
 ### 1. Fork and Clone
 
 ```bash
-# Fork on GitHub, then:
-git clone https://github.com/YOUR_USERNAME/amplifier-dev.git
-cd amplifier-dev
-git submodule update --init --recursive
+# Fork microsoft/amplifier on GitHub, then clone your fork:
+git clone -b next https://github.com/YOUR_USERNAME/amplifier.git
+cd amplifier
+
+# Add upstream remote
+git remote add upstream https://github.com/microsoft/amplifier.git
 ```
 
 ### 2. Set Up Development Environment

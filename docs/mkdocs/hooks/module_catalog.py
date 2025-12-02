@@ -1,7 +1,7 @@
 """
 MkDocs hook for auto-generating module catalog from repository structure.
 
-This hook scans the amplifier-dev directory for module repositories and generates
+This hook scans the parent directory for module repositories and generates
 documentation pages for each module type (providers, tools, hooks, orchestrators, contexts).
 """
 
@@ -187,18 +187,26 @@ def on_config(config: dict[str, Any]) -> dict[str, Any]:
     """MkDocs hook called during configuration."""
     log.info("Module catalog hook: scanning for modules...")
 
-    # Get the base path (amplifier-dev directory)
-    # docs_dir is amplifier-docs/docs, so we need to go up two levels
+    # Get the base path - try to find parent directory with modules
+    # In standalone mode, this won't exist and we'll just have empty module lists
     docs_dir = Path(config.get("docs_dir", "docs"))
-    base_path = docs_dir.parent.parent  # Go from amplifier-docs/docs to amplifier-dev
+    base_path = docs_dir.parent.parent  # Go from amplifier-docs/docs to potential parent
 
-    # Discover modules
-    modules = discover_modules(base_path)
+    # Check if we're in a context with module directories
+    has_modules = any(
+        p.is_dir() and p.name.startswith("amplifier-module-")
+        for p in base_path.iterdir()
+    ) if base_path.exists() else False
 
-    # Log discovered modules
-    for module_type, module_list in modules.items():
-        if module_list:
-            log.info(f"  Found {len(module_list)} {MODULE_TYPES[module_type]['display_name'].lower()}")
+    if has_modules:
+        modules = discover_modules(base_path)
+        # Log discovered modules
+        for module_type, module_list in modules.items():
+            if module_list:
+                log.info(f"  Found {len(module_list)} {MODULE_TYPES[module_type]['display_name'].lower()}")
+    else:
+        log.info("  No local modules found (standalone mode)")
+        modules = {key: [] for key in MODULE_TYPES}
 
     # Store modules in config for later use
     config["amplifier_modules"] = modules
@@ -274,7 +282,7 @@ def generate_module_list(modules: list[dict[str, Any]], module_type: str) -> str
         content += f"""
 <div class="module-card">
 <div class="content">
-<h4><a href="{name.replace('-', '_')}.md">{name.replace("-", " ").title()}</a></h4>
+<h4><a href="{name.replace('-', '_')}/">{name.replace("-", " ").title()}</a></h4>
 <p>{desc}</p>
 <code>{entry_point}</code>
 </div>

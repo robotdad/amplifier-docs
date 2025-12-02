@@ -118,15 +118,12 @@ uv tool install --force git+https://github.com/microsoft/amplifier@next
 For contributors or those who want to modify Amplifier:
 
 ```bash
-# Clone the repository
-git clone https://github.com/microsoft/amplifier-dev.git
-cd amplifier-dev
-
-# Initialize submodules
-git submodule update --init --recursive
+# Clone the repository (next branch)
+git clone -b next https://github.com/microsoft/amplifier.git
+cd amplifier
 
 # Install in development mode
-make install
+uv pip install -e .
 ```
 
 See [Local Development](../developer/local_development.md) for more details.

@@ -30,4 +30,4 @@ context:
 
 ## Contract
 
-See [Context Contract](../developer/contracts/context.md) for implementation details.
+See [Context Contract](../../developer/contracts/context.md) for implementation details.

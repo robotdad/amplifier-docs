@@ -31,4 +31,4 @@ orchestrator:
 
 ## Contract
 
-See [Orchestrator Contract](../developer/contracts/orchestrator.md) for implementation details.
+See [Orchestrator Contract](../../developer/contracts/orchestrator.md) for implementation details.

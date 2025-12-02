@@ -40,6 +40,7 @@ nav:
               - OpenAI: modules/providers/openai.md
               - Azure OpenAI: modules/providers/azure.md
               - Ollama: modules/providers/ollama.md
+              - vLLM: modules/providers/vllm.md
           - Tools:
               - modules/tools/index.md
               - Filesystem: modules/tools/filesystem.md
@@ -47,12 +48,21 @@ nav:
               - Web: modules/tools/web.md
               - Search: modules/tools/search.md
               - Task: modules/tools/task.md
+              - Todo: modules/tools/todo.md
           - Orchestrators:
               - modules/orchestrators/index.md
+              - Basic: modules/orchestrators/loop_basic.md
+              - Streaming: modules/orchestrators/loop_streaming.md
+              - Events: modules/orchestrators/loop_events.md
           - Contexts:
               - modules/contexts/index.md
+              - Simple: modules/contexts/simple.md
+              - Persistent: modules/contexts/persistent.md
           - Hooks:
               - modules/hooks/index.md
+              - Logging: modules/hooks/logging.md
+              - Approval: modules/hooks/approval.md
+              - Redaction: modules/hooks/redaction.md
       - Libraries:
           - libraries/index.md
           - Profiles: libraries/profiles.md

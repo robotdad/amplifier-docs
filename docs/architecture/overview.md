@@ -227,5 +227,4 @@ These libraries are **not part of the kernel**—they're application-layer conce
 
 ## References
 
-- **→ [Design Philosophy](https://github.com/microsoft/amplifier-core/blob/main/docs/DESIGN_PHILOSOPHY.md)** - Kernel design principles
-- **→ [Kernel Philosophy](../../ai_context/KERNEL_PHILOSOPHY.md)** - Linux kernel inspiration
+- **→ [Design Philosophy](https://github.com/microsoft/amplifier-core/blob/main/docs/DESIGN_PHILOSOPHY.md)** - Kernel design principles and Linux kernel inspiration

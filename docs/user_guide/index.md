@@ -12,27 +12,27 @@ This guide covers everything you need to know to use Amplifier effectively.
 <div class="grid">
 
 <div class="card">
-<h3><a href="cli.md">CLI Reference</a></h3>
+<h3><a href="cli/">CLI Reference</a></h3>
 <p>Complete reference for all Amplifier commands and options.</p>
 </div>
 
 <div class="card">
-<h3><a href="profiles.md">Profiles</a></h3>
+<h3><a href="profiles/">Profiles</a></h3>
 <p>Pre-configured capability sets for different use cases.</p>
 </div>
 
 <div class="card">
-<h3><a href="agents.md">Agents</a></h3>
+<h3><a href="agents/">Agents</a></h3>
 <p>Specialized sub-agents for focused tasks.</p>
 </div>
 
 <div class="card">
-<h3><a href="sessions.md">Sessions</a></h3>
+<h3><a href="sessions/">Sessions</a></h3>
 <p>Session management, persistence, and resumption.</p>
 </div>
 
 <div class="card">
-<h3><a href="collections.md">Collections</a></h3>
+<h3><a href="collections/">Collections</a></h3>
 <p>Shareable bundles of profiles, agents, and context.</p>
 </div>
 

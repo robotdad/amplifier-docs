@@ -12,17 +12,17 @@ Welcome to the Amplifier community! This section covers how to contribute, get s
 <div class="grid">
 
 <div class="card">
-<h3><a href="contributing.md">Contributing</a></h3>
+<h3><a href="contributing/">Contributing</a></h3>
 <p>Guidelines for contributing code, documentation, and modules.</p>
 </div>
 
 <div class="card">
-<h3><a href="roadmap.md">Roadmap</a></h3>
+<h3><a href="roadmap/">Roadmap</a></h3>
 <p>Current priorities and future plans.</p>
 </div>
 
 <div class="card">
-<h3><a href="support.md">Support</a></h3>
+<h3><a href="support/">Support</a></h3>
 <p>Getting help and reporting issues.</p>
 </div>
 

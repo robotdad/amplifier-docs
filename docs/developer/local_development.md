@@ -28,12 +28,9 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ### Clone the Repository
 
 ```bash
-# Clone amplifier-dev (development workspace)
-git clone https://github.com/microsoft/amplifier-dev.git
-cd amplifier-dev
-
-# Initialize submodules
-git submodule update --init --recursive
+# Clone amplifier (next branch)
+git clone -b next https://github.com/microsoft/amplifier.git
+cd amplifier
 ```
 
 ### Install Dependencies
@@ -63,24 +60,19 @@ amplifier run "Hello, world!"
 ## Repository Structure
 
 ```
-amplifier-dev/
-├── amplifier/                    # Entry point package
-├── amplifier-core/               # Kernel
-├── amplifier-app-cli/            # CLI application
-├── amplifier-profiles/           # Profiles library
-├── amplifier-collections/        # Collections library
-├── amplifier-config/             # Config library
-├── amplifier-module-resolution/  # Module resolution
-├── amplifier-module-provider-*/  # Provider modules
-├── amplifier-module-tool-*/      # Tool modules
-├── amplifier-module-hooks-*/     # Hook modules
-├── amplifier-module-loop-*/      # Orchestrator modules
-├── amplifier-module-context-*/   # Context modules
-├── amplifier-collection-*/       # Collections
-├── docs/                         # Documentation site
-├── ai_context/                   # AI assistant context
-└── .amplifier/                   # Local settings
+amplifier/
+├── amplifier_app_cli/            # CLI application
+├── data/                         # Profiles and default data
+├── tests/                        # Test suite
+└── pyproject.toml                # Package configuration
 ```
+
+Related repositories:
+
+- [amplifier-core](https://github.com/microsoft/amplifier-core) - Kernel
+- [amplifier-profiles](https://github.com/microsoft/amplifier-profiles) - Profiles library
+- [amplifier-collections](https://github.com/microsoft/amplifier-collections) - Collections library
+- [amplifier-module-*](https://github.com/microsoft?q=amplifier-module) - Module packages
 
 ## Working on a Module
 
@@ -99,7 +91,7 @@ Edit the code in `amplifier_module_tool_filesystem/`.
 Changes to Python files are reflected immediately (editable install).
 
 ```bash
-# From amplifier-dev root
+# From amplifier root
 amplifier run --profile dev "List files in current directory"
 ```
 
@@ -131,7 +123,7 @@ uv run pytest
 ### 4. Test Integration
 
 ```bash
-# From amplifier-dev root
+# From amplifier root
 amplifier run "Test prompt"
 ```
 
@@ -195,7 +187,7 @@ grep '"event":"tool:post"' events.jsonl | jq
 ### Run All Tests
 
 ```bash
-# From amplifier-dev root
+# From amplifier root
 make test
 ```
 
@@ -293,7 +285,7 @@ amplifier module list
 amplifier source list
 
 # Reinstall
-cd amplifier-dev
+cd amplifier
 make install
 ```
 
@@ -302,7 +294,7 @@ make install
 Ensure editable installs are up to date:
 
 ```bash
-cd amplifier-dev
+cd amplifier
 uv pip install -e amplifier-core
 uv pip install -e amplifier-app-cli
 ```
@@ -317,5 +309,4 @@ git submodule update --init --recursive --force
 
 ## References
 
-- **→ [AGENTS.md](https://github.com/microsoft/amplifier-dev/blob/main/AGENTS.md)** - Full development context
 - **→ [Local Development Guide](https://github.com/microsoft/amplifier/blob/next/docs/LOCAL_DEVELOPMENT.md)** - Detailed guide

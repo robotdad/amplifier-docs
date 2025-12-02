@@ -12,17 +12,17 @@ This guide covers developing modules, contributing to Amplifier, and setting up 
 <div class="grid">
 
 <div class="card">
-<h3><a href="module_development.md">Module Development</a></h3>
+<h3><a href="module_development/">Module Development</a></h3>
 <p>Create custom providers, tools, hooks, orchestrators, and context managers.</p>
 </div>
 
 <div class="card">
-<h3><a href="local_development.md">Local Development</a></h3>
+<h3><a href="local_development/">Local Development</a></h3>
 <p>Set up a development environment for working on Amplifier.</p>
 </div>
 
 <div class="card">
-<h3><a href="contracts/index.md">Module Contracts</a></h3>
+<h3><a href="contracts/">Module Contracts</a></h3>
 <p>Reference documentation for module interfaces.</p>
 </div>
 

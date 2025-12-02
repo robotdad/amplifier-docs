@@ -16,27 +16,27 @@ Amplifier follows a Linux kernel-inspired architecture where a tiny, stable core
 <div class="grid">
 
 <div class="card">
-<h3><a href="overview.md">Overview</a></h3>
+<h3><a href="overview/">Overview</a></h3>
 <p>High-level architecture and component relationships.</p>
 </div>
 
 <div class="card">
-<h3><a href="kernel.md">Kernel Philosophy</a></h3>
+<h3><a href="kernel/">Kernel Philosophy</a></h3>
 <p>Why the kernel is tiny, stable, and boring.</p>
 </div>
 
 <div class="card">
-<h3><a href="modules.md">Module System</a></h3>
+<h3><a href="modules/">Module System</a></h3>
 <p>How modules are discovered, loaded, and coordinated.</p>
 </div>
 
 <div class="card">
-<h3><a href="mount_plans.md">Mount Plans</a></h3>
+<h3><a href="mount_plans/">Mount Plans</a></h3>
 <p>The configuration contract between apps and kernel.</p>
 </div>
 
 <div class="card">
-<h3><a href="events.md">Event System</a></h3>
+<h3><a href="events/">Event System</a></h3>
 <p>Canonical events and observability.</p>
 </div>
 
